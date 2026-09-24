@@ -15,7 +15,7 @@ const server = http.createServer(async (req, res) => {
   res.setHeader('Cache-Control', 'no-store');
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('Referrer-Policy', 'no-referrer');
-  res.setHeader('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
+  res.setHeader('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'; base-uri 'none'; form-action 'self'");
   if (!origins.has(`http://${req.headers.host}`)) return send(403, { error: 'Unrecognized host.' });
   if (req.headers.origin && !origins.has(req.headers.origin)) return send(403, { error: 'Same-origin requests only.' });
   if (req.headers['sec-fetch-site'] === 'cross-site') return send(403, { error: 'Same-origin requests only.' });
