@@ -96,7 +96,7 @@ $('file').addEventListener('change', async () => {
     const file = $('file').files[0]; if (!file) return;
     if (file.size > 8 * 1024 * 1024) throw new Error('File exceeds the 8 MiB import limit.');
     const input = JSON.parse(await file.text());
-    const incoming = input.schema === SCHEMA ? [input] : input.atlasBundle === 1 && Array.isArray(input.snapshots) && input.snapshots.length <= 20 ? input.snapshots : null;
+    const incoming = input?.schema === SCHEMA ? [input] : input?.atlasBundle === 1 && Array.isArray(input.snapshots) && input.snapshots.length <= 20 ? input.snapshots : null;
     if (!incoming?.length) throw new Error('Choose an Atlas snapshot or capture bundle.');
     addCaptures(incoming); incoming.forEach(item => importedIds.add(item.id)); render(); notice(`Imported ${incoming.length} capture${incoming.length === 1 ? '' : 's'}. Source labels are supplied by the file; imported evidence is not independently authenticated.`);
   } catch (error) { notice(error instanceof SyntaxError ? 'That file is not valid JSON.' : error.message, true); }

@@ -29,5 +29,8 @@ test('malformed capture requests cannot reach the collector', async () => {
   assert.equal((await fetch(base + '/api/capture')).status, 405);
   assert.equal((await fetch(base + '/api/capture', { method: 'POST', body: '{}' })).status, 415);
   assert.equal((await fetch(base + '/api/capture', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{' })).status, 400);
+  const nullInput = await fetch(base + '/api/capture', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: 'null' });
+  assert.equal(nullInput.status, 400);
+  assert.match((await nullInput.json()).error, /capture label/);
   assert.equal((await fetch(base + '/api/capture', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ label: 'x'.repeat(101) }) })).status, 400);
 });

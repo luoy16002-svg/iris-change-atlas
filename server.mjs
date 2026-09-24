@@ -32,7 +32,7 @@ const server = http.createServer(async (req, res) => {
       if (!req.headers['content-type']?.startsWith('application/json')) return send(415, { error: 'JSON required.' });
       let body = ''; for await (const chunk of req) { body += chunk; if (body.length > 4096) return send(413, { error: 'Request too large.' }); }
       let input; try { input = JSON.parse(body); } catch { return send(400, { error: 'Invalid JSON.' }); }
-      if (typeof input.label !== 'string' || input.label.length > 100) return send(400, { error: 'A capture label of up to 100 characters is required.' });
+      if (typeof input?.label !== 'string' || input.label.length > 100) return send(400, { error: 'A capture label of up to 100 characters is required.' });
       busy = true;
       try { return send(200, await capture(await readConfig(), input.label)); }
       catch (error) { return send(502, { error: error.message === 'fetch failed' ? 'Could not reach IRIS. Check the local connection.' : error.message }); }
