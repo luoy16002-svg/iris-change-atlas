@@ -5,7 +5,8 @@ const port = Number(process.env.PORT || 4177);
 const files = new Map([
   ['/', ['public/index.html', 'text/html']], ['/app.mjs', ['public/app.mjs', 'text/javascript']],
   ['/atlas-core.mjs', ['public/atlas-core.mjs', 'text/javascript']], ['/styles.css', ['public/styles.css', 'text/css']],
-  ['/example.json', ['public/example.json', 'application/json']]
+  ['/example.json', ['public/example.json', 'application/json']],
+  ['/responsive-check.html', ['public/responsive-check.html', 'text/html']]
 ]);
 const origins = new Set([`http://127.0.0.1:${port}`, `http://localhost:${port}`]);
 let busy = false;
