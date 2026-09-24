@@ -20,7 +20,9 @@ The included example comes from two actual captures of a disposable local IRIS 2
 
 No paid service or AI API is needed to run the application. Source and UI were developed with AI assistance, and the repository describes exactly what was tested. No other contestant's code was reused.
 
-Links: fill with verified public repository and demo after deployment.
+Repository: https://github.com/luoy16002-svg/iris-change-atlas
+
+Public recorded demo: https://luoy16002-svg.github.io/iris-change-atlas/
 
 Required checks before actual submission:
 

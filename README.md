@@ -8,6 +8,8 @@ Original entry under development for the [InterSystems Build Your Own Management
 
 ## Try it
 
+[Open the recorded browser demo](https://luoy16002-svg.github.io/iris-change-atlas/) · [Source code](https://github.com/luoy16002-svg/iris-change-atlas)
+
 Requires Node.js 22+; no npm dependencies or paid API. The web client also runs as static files, offering the recorded example, JSON import, comparisons, and downloads without a backend. The public/static version never connects to your IRIS server.
 
 ```sh

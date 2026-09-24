@@ -1,6 +1,5 @@
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
 import { capture, readConfig } from './lib/iris-client.mjs';
 const port = Number(process.env.PORT || 4177);
 const files = new Map([
