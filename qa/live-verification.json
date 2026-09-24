@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-09-24T13:34:43.535Z",
+  "runtime": "IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2026.2 (Build 221U) Fri Jun 26 2026 09:58:52 EDT",
+  "method": "Actual Basic-authenticated GETs to an isolated local IRIS 2026.2 Community Edition. Fixture writes are confined to disabled named test applications; the application itself uses GET only.",
+  "comparedCollections": 3,
+  "changes": [
+    {
+      "name": "/atlas-fixture-orders",
+      "type": "changed",
+      "fields": [
+        "Namespace"
+      ]
+    },
+    {
+      "name": "/atlas-fixture-reports",
+      "type": "added",
+      "fields": [
+        "Name",
+        "Namespace",
+        "NamespaceDefault",
+        "Enabled",
+        "Type",
+        "Resource",
+        "AuthenticationMethods",
+        "IsSystemApp",
+        "DispatchClass"
+      ]
+    },
+    {
+      "name": "/atlas-fixture-retired",
+      "type": "removed",
+      "fields": [
+        "Name",
+        "Namespace",
+        "NamespaceDefault",
+        "Enabled",
+        "Type",
+        "Resource",
+        "AuthenticationMethods",
+        "IsSystemApp",
+        "DispatchClass"
+      ]
+    }
+  ],
+  "unchanged": 40,
+  "beforeCounts": {
+    "webapps": 24,
+    "tasks": 16,
+    "namespaces": 2
+  },
+  "afterCounts": {
+    "webapps": 24,
+    "tasks": 16,
+    "namespaces": 2
+  }
+}

@@ -1,0 +1,1061 @@
+{
+  "atlasBundle": 1,
+  "snapshots": [
+    {
+      "schema": "iris-change-atlas/v1",
+      "id": "recorded-5a06a482-b7cb-462c-b6fa-4166ebeb327c",
+      "capturedAt": "2026-09-24T13:34:42.772Z",
+      "label": "Before planned maintenance",
+      "source": {
+        "id": "recorded-community-2026.2",
+        "label": "Recorded local Community Edition",
+        "version": "IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2026.2 (Build 221U) Fri Jun 26 2026 09:58:52 EDT",
+        "kind": "example"
+      },
+      "sections": {
+        "webapps": {
+          "status": "ok",
+          "reason": "",
+          "rows": [
+            {
+              "Name": "/api/admin",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.Admin"
+            },
+            {
+              "Name": "/api/atelier",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "%Development",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.Atelier"
+            },
+            {
+              "Name": "/api/deepsee",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.DeepSee"
+            },
+            {
+              "Name": "/api/docdb",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.DocDB"
+            },
+            {
+              "Name": "/api/iam",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": false,
+              "Type": "CSP",
+              "Resource": "%IAM",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.IAM.v1.disp"
+            },
+            {
+              "Name": "/api/iknow",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.iKnow"
+            },
+            {
+              "Name": "/api/interop-editors",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.InteropEditors"
+            },
+            {
+              "Name": "/api/mgmnt",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.Mgmnt.v2.disp"
+            },
+            {
+              "Name": "/api/monitor",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.Monitor"
+            },
+            {
+              "Name": "/atlas-fixture-orders",
+              "Namespace": "USER",
+              "NamespaceDefault": false,
+              "Enabled": false,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.DocDB"
+            },
+            {
+              "Name": "/atlas-fixture-retired",
+              "Namespace": "USER",
+              "NamespaceDefault": false,
+              "Enabled": false,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.DocDB"
+            },
+            {
+              "Name": "/csp/broker",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/documatic",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Development",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys",
+              "Namespace": "%SYS",
+              "NamespaceDefault": true,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/exp",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Development",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/mgr",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Admin_Manage",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/oauth2",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": false,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/op",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Admin_Operate",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/sec",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/user",
+              "Namespace": "USER",
+              "NamespaceDefault": true,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/isc/studio/rules",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/isc/studio/templates",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Development",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/isc/studio/usertemplates",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/ui/interop",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            }
+          ],
+          "capturedAt": "2026-09-24T13:34:42.773Z"
+        },
+        "tasks": {
+          "status": "ok",
+          "reason": "",
+          "rows": [
+            {
+              "Id": 1,
+              "Name": "Switch Journal",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Switches the journal file at midnight every day",
+              "Suspended": false
+            },
+            {
+              "Id": 10,
+              "Name": "Check Logging activity",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Check active application logging at 1:00 am",
+              "Suspended": false
+            },
+            {
+              "Id": 11,
+              "Name": "Purge Backup Log",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges messages from IRIS backup log that are more than 30 days old every night at 1:30 am",
+              "Suspended": false
+            },
+            {
+              "Id": 12,
+              "Name": "Purge ZEN Reports temp files",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges ZEN Reports temp files every night at 1:30 am",
+              "Suspended": false
+            },
+            {
+              "Id": 13,
+              "Name": "Feature Tracker",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Collects data on feature use and sends to ISC weekly",
+              "Suspended": false
+            },
+            {
+              "Id": 18,
+              "Name": "Cleanup Source Journal",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Cleans old source journal nodes every night at 1:00 am",
+              "Suspended": false
+            },
+            {
+              "Id": 2,
+              "Name": "Purge Journal",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges old journal files every night at 12:30 am",
+              "Suspended": false
+            },
+            {
+              "Id": 20,
+              "Name": "Purge Interoperability Usage Metrics",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Consoldiates and purges interoperability usage metrics",
+              "Suspended": false
+            },
+            {
+              "Id": 21,
+              "Name": "Automatic Table Statistic Collection",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Automatic Table Statistic Collection within all the namespaces",
+              "Suspended": false
+            },
+            {
+              "Id": 3,
+              "Name": "Purge Tasks",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges the task history global every night at 1:00 am",
+              "Suspended": false
+            },
+            {
+              "Id": 4,
+              "Name": "Integrity Check",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Integrity check for databases at 2:00 am every Monday",
+              "Suspended": false
+            },
+            {
+              "Id": 5,
+              "Name": "Security Scan",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Scans the security database at midnight every day",
+              "Suspended": false
+            },
+            {
+              "Id": 6,
+              "Name": "Diagnostic Report",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Send system diagnostic reports to WRC On Demand, and/or on a schedule",
+              "Suspended": false
+            },
+            {
+              "Id": 7,
+              "Name": "Purge Audit Database",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges old Audit information after Switch Journal is run",
+              "Suspended": false
+            },
+            {
+              "Id": 8,
+              "Name": "Inventory Scan",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Run a scan of the system inventory on install or upgrade and on demand thereafter",
+              "Suspended": false
+            },
+            {
+              "Id": 9,
+              "Name": "Purge errors and log files",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges errors and log files at 1:00 am",
+              "Suspended": false
+            }
+          ],
+          "capturedAt": "2026-09-24T13:34:42.786Z"
+        },
+        "namespaces": {
+          "status": "ok",
+          "reason": "",
+          "rows": [
+            {
+              "Name": "%SYS",
+              "Globals": "IRISSYS",
+              "Routines": "IRISSYS",
+              "SysGlobals": "IRISSYS",
+              "SysRoutines": "IRISSYS",
+              "Library": "IRISLIB",
+              "TempGlobals": "IRISTEMP"
+            },
+            {
+              "Name": "USER",
+              "Globals": "USER",
+              "Routines": "USER",
+              "SysGlobals": "IRISSYS",
+              "SysRoutines": "IRISSYS",
+              "Library": "IRISLIB",
+              "TempGlobals": "IRISTEMP"
+            }
+          ],
+          "capturedAt": "2026-09-24T13:34:42.793Z"
+        }
+      },
+      "runtime": {
+        "status": "ok",
+        "data": {
+          "Status": {
+            "UpTime": "0d  0h 09m",
+            "LastBackup": "Never",
+            "SystemMonitor": false
+          },
+          "Alerts": {
+            "SeriousAlerts": 0,
+            "ApplicationErrors": 0
+          },
+          "Licensing": {
+            "LicenseLimit": 8,
+            "LicenseUse": 0
+          },
+          "SystemUsage": {
+            "DatabaseSpace": "Normal",
+            "JournalSpace": "Normal",
+            "LockTable": "Normal",
+            "Processes": 4,
+            "CSPSessions": 0
+          }
+        }
+      }
+    },
+    {
+      "schema": "iris-change-atlas/v1",
+      "id": "recorded-0db9b366-6617-40b1-9fb5-a2362347e16a",
+      "capturedAt": "2026-09-24T13:34:43.496Z",
+      "label": "After planned maintenance",
+      "source": {
+        "id": "recorded-community-2026.2",
+        "label": "Recorded local Community Edition",
+        "version": "IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2026.2 (Build 221U) Fri Jun 26 2026 09:58:52 EDT",
+        "kind": "example"
+      },
+      "sections": {
+        "webapps": {
+          "status": "ok",
+          "reason": "",
+          "rows": [
+            {
+              "Name": "/api/admin",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.Admin"
+            },
+            {
+              "Name": "/api/atelier",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "%Development",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.Atelier"
+            },
+            {
+              "Name": "/api/deepsee",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.DeepSee"
+            },
+            {
+              "Name": "/api/docdb",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.DocDB"
+            },
+            {
+              "Name": "/api/iam",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": false,
+              "Type": "CSP",
+              "Resource": "%IAM",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.IAM.v1.disp"
+            },
+            {
+              "Name": "/api/iknow",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.iKnow"
+            },
+            {
+              "Name": "/api/interop-editors",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.InteropEditors"
+            },
+            {
+              "Name": "/api/mgmnt",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.Mgmnt.v2.disp"
+            },
+            {
+              "Name": "/api/monitor",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.Monitor"
+            },
+            {
+              "Name": "/atlas-fixture-orders",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": false,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.DocDB"
+            },
+            {
+              "Name": "/atlas-fixture-reports",
+              "Namespace": "USER",
+              "NamespaceDefault": false,
+              "Enabled": false,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": "%Api.DocDB"
+            },
+            {
+              "Name": "/csp/broker",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/documatic",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Development",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys",
+              "Namespace": "%SYS",
+              "NamespaceDefault": true,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/exp",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Development",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/mgr",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Admin_Manage",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/oauth2",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": false,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/op",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Admin_Operate",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/sys/sec",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/csp/user",
+              "Namespace": "USER",
+              "NamespaceDefault": true,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/isc/studio/rules",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/isc/studio/templates",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "System,CSP",
+              "Resource": "%Development",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/isc/studio/usertemplates",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Password",
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            },
+            {
+              "Name": "/ui/interop",
+              "Namespace": "%SYS",
+              "NamespaceDefault": false,
+              "Enabled": true,
+              "Type": "CSP",
+              "Resource": "",
+              "AuthenticationMethods": [
+                "Unauthenticated"
+              ],
+              "IsSystemApp": false,
+              "DispatchClass": ""
+            }
+          ],
+          "capturedAt": "2026-09-24T13:34:43.496Z"
+        },
+        "tasks": {
+          "status": "ok",
+          "reason": "",
+          "rows": [
+            {
+              "Id": 1,
+              "Name": "Switch Journal",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Switches the journal file at midnight every day",
+              "Suspended": false
+            },
+            {
+              "Id": 10,
+              "Name": "Check Logging activity",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Check active application logging at 1:00 am",
+              "Suspended": false
+            },
+            {
+              "Id": 11,
+              "Name": "Purge Backup Log",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges messages from IRIS backup log that are more than 30 days old every night at 1:30 am",
+              "Suspended": false
+            },
+            {
+              "Id": 12,
+              "Name": "Purge ZEN Reports temp files",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges ZEN Reports temp files every night at 1:30 am",
+              "Suspended": false
+            },
+            {
+              "Id": 13,
+              "Name": "Feature Tracker",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Collects data on feature use and sends to ISC weekly",
+              "Suspended": false
+            },
+            {
+              "Id": 18,
+              "Name": "Cleanup Source Journal",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Cleans old source journal nodes every night at 1:00 am",
+              "Suspended": false
+            },
+            {
+              "Id": 2,
+              "Name": "Purge Journal",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges old journal files every night at 12:30 am",
+              "Suspended": false
+            },
+            {
+              "Id": 20,
+              "Name": "Purge Interoperability Usage Metrics",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Consoldiates and purges interoperability usage metrics",
+              "Suspended": false
+            },
+            {
+              "Id": 21,
+              "Name": "Automatic Table Statistic Collection",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Automatic Table Statistic Collection within all the namespaces",
+              "Suspended": false
+            },
+            {
+              "Id": 3,
+              "Name": "Purge Tasks",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges the task history global every night at 1:00 am",
+              "Suspended": false
+            },
+            {
+              "Id": 4,
+              "Name": "Integrity Check",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Integrity check for databases at 2:00 am every Monday",
+              "Suspended": false
+            },
+            {
+              "Id": 5,
+              "Name": "Security Scan",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Scans the security database at midnight every day",
+              "Suspended": false
+            },
+            {
+              "Id": 6,
+              "Name": "Diagnostic Report",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Send system diagnostic reports to WRC On Demand, and/or on a schedule",
+              "Suspended": false
+            },
+            {
+              "Id": 7,
+              "Name": "Purge Audit Database",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges old Audit information after Switch Journal is run",
+              "Suspended": false
+            },
+            {
+              "Id": 8,
+              "Name": "Inventory Scan",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Run a scan of the system inventory on install or upgrade and on demand thereafter",
+              "Suspended": false
+            },
+            {
+              "Id": 9,
+              "Name": "Purge errors and log files",
+              "Namespace": "%SYS",
+              "Type": "System",
+              "Description": "Purges errors and log files at 1:00 am",
+              "Suspended": false
+            }
+          ],
+          "capturedAt": "2026-09-24T13:34:43.502Z"
+        },
+        "namespaces": {
+          "status": "ok",
+          "reason": "",
+          "rows": [
+            {
+              "Name": "%SYS",
+              "Globals": "IRISSYS",
+              "Routines": "IRISSYS",
+              "SysGlobals": "IRISSYS",
+              "SysRoutines": "IRISSYS",
+              "Library": "IRISLIB",
+              "TempGlobals": "IRISTEMP"
+            },
+            {
+              "Name": "USER",
+              "Globals": "USER",
+              "Routines": "USER",
+              "SysGlobals": "IRISSYS",
+              "SysRoutines": "IRISSYS",
+              "Library": "IRISLIB",
+              "TempGlobals": "IRISTEMP"
+            }
+          ],
+          "capturedAt": "2026-09-24T13:34:43.508Z"
+        }
+      },
+      "runtime": {
+        "status": "ok",
+        "data": {
+          "Status": {
+            "UpTime": "0d  0h 09m",
+            "LastBackup": "Never",
+            "SystemMonitor": false
+          },
+          "Alerts": {
+            "SeriousAlerts": 0,
+            "ApplicationErrors": 0
+          },
+          "Licensing": {
+            "LicenseLimit": 8,
+            "LicenseUse": 0
+          },
+          "SystemUsage": {
+            "DatabaseSpace": "Normal",
+            "JournalSpace": "Normal",
+            "LockTable": "Normal",
+            "Processes": 4,
+            "CSPSessions": 0
+          }
+        }
+      }
+    }
+  ]
+}

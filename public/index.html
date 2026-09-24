@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123a35">
+  <title>IRIS Change Atlas</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to review</a>
+  <aside class="sidebar">
+    <a class="brand" href="./" aria-label="IRIS Change Atlas home"><span class="mark" aria-hidden="true">↗</span><span>IRIS<br><strong>Change Atlas</strong></span></a>
+    <p class="eyebrow">OPERATIONS WORKSPACE</p>
+    <div class="nav-current"><span aria-hidden="true">▤</span> Change review <span class="nav-dot"></span></div>
+    <div class="side-guide"><p>Leave a clear trail.</p><ol><li>Capture a baseline</li><li>Make your planned change in IRIS</li><li>Capture again and compare</li><li>Export a review</li></ol></div>
+    <div class="side-bottom"><span class="read-badge">READ ONLY</span><p>Three collections.<br>Every difference explained.</p><small>InterSystems IRIS · API v2</small></div>
+  </aside>
+  <main id="workspace">
+    <header class="topbar"><span>Management / <strong>Change review</strong></span><span id="connection" class="connection">Checking local connection…</span></header>
+    <section class="heading"><div><p class="eyebrow">BEFORE → AFTER</p><h1>Know what changed.</h1><p class="subtitle">Compare configuration captures. Keep the evidence with the decision.</p></div><button id="example" class="secondary">Explore recorded example <span aria-hidden="true">↗</span></button></section>
+    <section class="capture-panel" aria-label="Capture configuration">
+      <div><h2>Capture your instance</h2><p>Credentials stay in the local server. This workspace sends no writes to IRIS.</p></div>
+      <form id="capture-form"><label for="capture-label" class="sr-only">Capture label</label><input id="capture-label" placeholder="e.g. Before maintenance" maxlength="100" required><button id="capture" type="submit">Capture now <span aria-hidden="true">+</span></button></form>
+    </section>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <section class="comparison-controls" aria-label="Choose comparison">
+      <label>BASELINE<select id="baseline"><option value="">No captures yet</option></select></label>
+      <button id="swap" class="swap secondary" aria-label="Swap baseline and current" disabled>⇄</button>
+      <label>CURRENT<select id="current"><option value="">No captures yet</option></select></label>
+      <div class="control-actions"><button id="import" class="secondary">Import captures</button><input type="file" id="file" accept="application/json,.json" hidden><button id="export-captures" class="secondary" disabled>Save captures</button></div>
+    </section>
+    <p class="privacy-note">Captures stay in this tab until you save them. Closing or refreshing clears the workspace. Read requests run sequentially, not as an atomic snapshot.</p>
+    <section id="empty" class="empty-state"><div class="empty-diagram" aria-hidden="true"><span>01<br><b>Baseline</b></span><i>→</i><span>02<br><b>Current</b></span><i>→</i><span class="last">Δ<br><b>Clear changes</b></span></div><h2>A review starts with two captures.</h2><p>Capture your baseline, then capture again after your change.<br>Or explore a recorded local IRIS example to see how the review works.</p></section>
+    <section id="review" hidden aria-label="Comparison results">
+      <div id="source-strip" class="source-strip"></div>
+      <div id="stats" class="stats"></div>
+      <div id="gaps" class="evidence-gaps"></div>
+      <section class="review-grid"><div class="changes-panel"><div class="panel-heading"><h2>Change ledger <span id="change-count"></span></h2><label class="search"><span class="sr-only">Find an object</span><input id="search" type="search" placeholder="Find an object…"></label></div>
+        <div class="filters" aria-label="Filter collections"><button data-section="all" aria-pressed="true">All changes</button><button data-section="webapps" aria-pressed="false">Web apps</button><button data-section="tasks" aria-pressed="false">Tasks</button><button data-section="namespaces" aria-pressed="false">Namespaces</button></div>
+        <div id="change-list" class="change-list"></div>
+      </div><aside id="inspector" class="inspector" aria-label="Object details"></aside></section>
+      <section class="handoff"><div><h2>Make the handoff useful.</h2><p>Attach what you checked, what changed, and anything the next person should know.</p><label for="note" class="sr-only">Reviewer note</label><textarea id="note" maxlength="2000" rows="2" placeholder="Reviewer note — e.g. Namespace mapping change matches the maintenance plan."></textarea></div><button id="export-report">Export review .md <span aria-hidden="true">↓</span></button></section>
+      <details class="runtime"><summary>Runtime context · current capture</summary><div id="runtime"></div><p>Runtime counters are context only. They are excluded from configuration differences.</p></details>
+    </section>
+    <footer><span>IRIS Change Atlas <b>v0.1</b></span><span>Configuration evidence · no automatic remediation</span></footer>
+  </main>
+</body>
+</html>
