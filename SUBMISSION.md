@@ -16,7 +16,7 @@ The local Node server reads web applications, scheduled tasks, namespace mapping
 
 Evidence quality is part of the workflow. Permission failures, malformed responses, duplicate identities, and row limits are marked unavailable or partial. They cannot silently become an empty collection that falsely reports deletions. Different sources are not compared. Moving task execution timestamps and runtime counters do not pollute configuration differences.
 
-The included example comes from two actual captures of a disposable local IRIS 2026.2 Community Edition instance. A controlled fixture changed one disabled application's namespace, added another disabled application, and removed a third. The tool reported the three expected changes and 40 unchanged objects. Twenty-one automated tests cover comparison and connector boundaries. This demonstrates the stated behavior on a local fixture; it is not a production audit or customer validation.
+The included example comes from two actual captures of a disposable local IRIS 2026.2 Community Edition instance. A controlled fixture changed one disabled application's namespace, added another disabled application, and removed a third. The tool reported the three expected changes and 40 unchanged objects. Twenty-four automated tests cover comparison and connector boundaries. This demonstrates the stated behavior on a local fixture; it is not a production audit or customer validation.
 
 No paid service or AI API is needed to run the application. Source and UI were developed with AI assistance, and the repository describes exactly what was tested. No other contestant's code was reused.
 

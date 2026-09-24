@@ -104,7 +104,7 @@ $('file').addEventListener('change', async () => {
 });
 $('export-captures').addEventListener('click', () => { download('iris-atlas-captures.json', JSON.stringify({ atlasBundle: 1, snapshots: captures }, null, 2), 'application/json'); notice('Capture bundle saved. It contains configuration metadata; review it before sharing.'); });
 $('export-report').addEventListener('click', () => { if (!result) return; download('iris-atlas-review.md', markdownReport(result, $('note').value), 'text/markdown'); notice('Review exported with field changes, evidence gaps, and your note.'); });
-function offline(message) { $('connection').textContent = 'Offline review · recorded example'; $('capture').disabled = true; $('capture-label').disabled = true; notice(message); }
+function offline(message) { $('connection').textContent = 'Offline review · recorded example'; $('capture').disabled = true; $('capture-label').disabled = true; document.querySelector('.capture-panel').hidden = true; notice(message); }
 if (!['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) offline('Public demo: explore the recorded example or import local captures. Run the local server to connect to your own IRIS instance.');
 else {
   try { const data = await (await fetch('./api/connection')).json(); $('connection').textContent = data.configured ? `${data.label} · configured` : 'Offline review available'; if (!data.configured) offline(data.message + ' You can still explore the example or import captures.'); }

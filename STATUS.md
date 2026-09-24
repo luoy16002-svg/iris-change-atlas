@@ -3,7 +3,7 @@
 Updated 2026-09-24, Beijing. Owned by the xinmi task; independent of the mimimi projects.
 
 - Original implementation: dependency-free Node local collector, browser review, import/export, evidence-aware comparisons for three collections, runtime context.
-- `npm test`: 21/21 passed. `node --check` passed for client and server.
+- `npm test`: 24/24 passed. `node --check` passed for client and server.
 - Actual IRIS 2026.2 Community Edition API v2 requests returned HTTP 200. Controlled integration found exactly one addition, one removal, one namespace edit, 40 unchanged objects, 3/3 complete collections. See `qa/live-verification.json`.
 - Fixture applications were removed after the test. Original system applications and tasks were not edited.
 - Public example is projected from those actual local captures and labeled recorded example.
